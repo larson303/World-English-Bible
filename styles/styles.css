@@ -21,7 +21,7 @@
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
   --max-width: 50rem;
-  --sidebar-width: 280px;
+  --sidebar-width: 240px;
 }
 
 /* Font Face */
@@ -833,9 +833,42 @@ html[dir="rtl"] .q3 {
   }
 }
 
+@media (max-width: 899px) {
+  .sidebar {
+    width: min(240px, 75vw);
+  }
+
+  .sidebar-section li a {
+    padding: 0.5rem var(--spacing-md);
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 1.1rem;
+  }
+
+  .sidebar {
+    width: min(220px, 80vw);
+  }
+
+  .sidebar-header {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .sidebar-header h2 {
+    font-size: 1rem;
+  }
+
+  .sidebar-section summary {
+    padding: 0.5rem var(--spacing-md);
+    font-size: 0.9rem;
+  }
+
+  .sidebar-section li a {
+    padding: 0.55rem var(--spacing-md);
+    font-size: 0.9rem;
   }
 
   .content-wrapper {
