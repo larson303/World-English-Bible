@@ -275,7 +275,7 @@ def process_chapter_file(filepath):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{book_name} Chapter {chapter_num} - World English Bible">
   <title>World English Bible - {book_name} {chapter_num}</title>
-  <link rel="stylesheet" href="../styles/gentiumplus.css">
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
   <div class="page-wrapper">

@@ -130,7 +130,7 @@ def clean_chapter_list(content, book_name):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>World English Bible - {book_name}</title>
-  <link rel="stylesheet" href="../styles/gentiumplus.css">
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body class="chlist">
   <header>
@@ -221,7 +221,7 @@ def clean_chapter_content(content, book_name, chapter_num):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{book_name} Chapter {chapter_num} - World English Bible">
   <title>World English Bible - {book_name} {chapter_num}</title>
-  <link rel="stylesheet" href="../styles/gentiumplus.css">
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 {nav_html}
