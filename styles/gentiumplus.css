@@ -634,26 +634,41 @@ h1 {
   color: #fff;
 }
 
-/* Chapter List Page */
-.chlist {
+/* Chapter List Page (Book Home) */
+.chlist .main {
   text-align: center;
 }
 
-.chlist header {
+.chlist .main h1 {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.chlist .main h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: var(--color-copyright);
   margin-bottom: var(--spacing-lg);
 }
 
-.chlist h1, .chlist h2 {
-  margin: var(--spacing-sm) 0;
-}
-
-.chlist h1 a, .chlist h2 a {
+.chlist .main h2 a {
   color: var(--color-link);
   text-decoration: none;
 }
 
-.chlist h1 a:hover, .chlist h2 a:hover {
+.chlist .main h2 a:hover {
   text-decoration: underline;
+}
+
+.chlist .tnav {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) 0;
+}
+
+.chlist .tnav a {
+  min-width: 2.5rem;
 }
 
 /* Index Page / Book List */
