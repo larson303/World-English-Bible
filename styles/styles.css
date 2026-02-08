@@ -315,7 +315,7 @@ h1 {
   font-size: 1.4rem;
 }
 
-.mt, .mt1 {
+.mt { /* Major Title (level 1) */
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
@@ -323,14 +323,14 @@ h1 {
   margin: var(--spacing-md) 0;
 }
 
-.mt2 {
+.mt2 { /* Major Title (level 2) */
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
 
-.mt3 {
+.mt3 { /* Major Title (level 3) */
   display: block;
   font-size: 1.1rem;
   font-weight: bold;
@@ -349,62 +349,40 @@ h1 {
 }
 
 /* Paragraphs */
-.p {
+.p { /* Paragraph */
   display: block;
   text-indent: 2rem;
   margin: var(--spacing-sm) 0;
   text-align: justify;
 }
 
-.m, .mi {
+.m { /* Margin Paragraph (no indent) */
   display: block;
-  margin: var(--spacing-sm) 0;
-}
-
-.mi {
-  text-indent: 2rem;
-}
-
-.nb {
-  display: block;
-  margin: var(--spacing-sm) 0;
-}
-
-.pc {
-  display: block;
-  text-align: center;
   margin: var(--spacing-sm) 0;
 }
 
 /* Poetry (Psalms, Proverbs, etc.) */
-.q, .q1 {
+.q { /* Poetry Line (level 1) */
   display: block;
   margin-left: 2rem;
   text-indent: -1rem;
   margin-top: 0.25rem;
 }
 
-.q2 {
+.q2 { /* Poetry Line (level 2) */
   display: block;
   margin-left: 3rem;
   text-indent: -1rem;
   margin-top: 0.1rem;
 }
 
-.q3 {
+.q3 { /* Poetry Line (level 3) */
   display: block;
   margin-left: 4rem;
   text-indent: -1rem;
 }
 
-.qs {
-  display: block;
-  text-align: right;
-  font-style: italic;
-  margin-right: 1rem;
-}
-
-.b {
+.b { /* Blank Line / Stanza Break */
   display: block;
   margin-left: 2rem;
   text-indent: -1rem;
@@ -422,26 +400,12 @@ h1 {
 }
 
 /* Words of Jesus */
-.wj {
+.wj { /* Words of Jesus */
   color: var(--color-jesus);
 }
 
 /* Section Headings */
-.s, .s1 {
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  margin: var(--spacing-lg) 0 var(--spacing-sm);
-}
-
-.d {
-  display: block;
-  font-style: italic;
-  margin: var(--spacing-sm) 0;
-  color: var(--color-accent);
-}
-
-.ms {
+.ms { /* Major Section Heading */
   display: block;
   font-weight: bold;
   text-align: center;
@@ -450,69 +414,16 @@ h1 {
   color: var(--color-accent);
 }
 
-/* Lists */
-.li, .li1, .ili {
-  display: block;
-  margin-left: 2rem;
-  margin-top: 0.25rem;
-}
-
-/* Introduction Paragraphs */
-.ip {
-  display: block;
-  text-indent: 2rem;
-  margin: var(--spacing-sm) 0;
-  color: var(--color-accent);
-}
-
-.is {
-  display: block;
-  font-weight: bold;
-  margin: var(--spacing-md) 0 var(--spacing-sm);
-  color: var(--color-accent);
-}
-
-/* Indented Paragraphs */
-.pi {
-  display: block;
-  margin-left: 2rem;
-  text-indent: 2rem;
-  margin-top: var(--spacing-sm);
-}
-
 /* Special Text Styles */
-.bk {
+.bk { /* Book Name Reference */
   font-weight: bold;
   font-style: italic;
-}
-
-.k {
-  font-weight: bold;
-}
-
-.fqa {
-  font-style: italic;
-}
-
-.sp {
-  display: block;
-  font-style: italic;
-  margin: var(--spacing-sm) 0;
 }
 
 /* Table of Contents */
-.toc, .toc1, .toc2 {
+.toc {
   display: block;
   margin: 0.25rem 0;
-}
-
-.toc1 {
-  margin-left: 1rem;
-}
-
-.toc2 {
-  margin-left: 2rem;
-  font-size: 0.95rem;
 }
 
 /* Footnotes & Cross References */
@@ -563,21 +474,9 @@ h1 {
   display: none;
 }
 
-.f {
+.f { /* Footnote */
   display: block;
   margin: var(--spacing-sm) 0;
-}
-
-.ft {
-  font-style: normal;
-}
-
-.fl {
-  font-weight: bold;
-}
-
-.fq {
-  font-style: italic;
 }
 
 .notebackref {
@@ -590,18 +489,8 @@ h1 {
   text-decoration: underline;
 }
 
-/* Cross References */
-.x {
-  font-size: 0.9rem;
-  color: var(--color-footnote);
-}
-
-.xt {
-  font-style: italic;
-}
-
 /* Chapter Grid Navigation */
-.tnav {
+.tnav { /* Table Navigation (chapter grid) */
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -792,7 +681,6 @@ html[dir="rtl"] body {
 }
 
 html[dir="rtl"] .q,
-html[dir="rtl"] .q1,
 html[dir="rtl"] .q2,
 html[dir="rtl"] .q3 {
   margin-left: 0;
@@ -897,7 +785,7 @@ html[dir="rtl"] .q3 {
     text-indent: 1.5rem;
   }
 
-  .q, .q1 {
+  .q {
     margin-left: 1.5rem;
   }
 
