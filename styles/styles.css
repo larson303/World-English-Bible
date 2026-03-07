@@ -3,25 +3,125 @@
 /* CSS Custom Properties */
 :root {
   --font-family: 'Gentium Plus', 'Gentium', Georgia, 'Times New Roman', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-size-base: 1.2rem;
-  --line-height: 1.6;
-  --color-text: #222;
-  --color-background: #fff;
-  --color-accent: #006;
-  --color-jesus: #800;
-  --color-link: #036;
-  --color-link-hover: #069;
-  --color-nav-bg: #00cfff;
-  --color-nav-hover: #204880;
-  --color-footnote: #006;
-  --color-copyright: #555;
-  --color-sidebar-bg: #f5f5f5;
-  --color-breadcrumb-bg: #f8f9fa;
+  --line-height: 1.7;
+  --color-text: #2c2c2c;
+  --color-background: #fdfcfa;
+  --color-accent: #1a5276;
+  --color-jesus: #8b1a1a;
+  --color-link: #2874a6;
+  --color-link-hover: #1a5276;
+  --color-nav-bg: #d4e6f1;
+  --color-nav-hover: #1a5276;
+  --color-footnote: #4a6580;
+  --color-copyright: #7a7a7a;
+  --color-sidebar-bg: #f0f4f8;
+  --color-breadcrumb-bg: #eaf2f8;
+  --color-border: #c8d6e0;
+  --color-surface: #f0f4f8;
+  --color-text-inverse: #fff;
+  --color-surface-alt: #d4e6f1;
+  --color-accent-dark: #0e3a55;
+  --color-overlay: rgba(0,0,0,0.5);
+  --color-muted: #999;
+  --color-focus-ring: rgba(26, 82, 118, 0.15);
+  --color-shadow: rgba(0,0,0,0.15);
+  --color-border-subtle: rgba(0,0,0,0.06);
+  --color-popup-bg: #f5f9fc;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
+  --spacing-xl: 2.5rem;
   --max-width: 50rem;
   --sidebar-width: 240px;
+}
+
+/* ================================
+   Dark Theme (Night)
+   ================================ */
+[data-theme="dark"] {
+  --color-text: #d8dce0;
+  --color-background: #121820;
+  --color-accent: #7cb3d4;
+  --color-jesus: #d4736c;
+  --color-link: #7cb3d4;
+  --color-link-hover: #a3cce0;
+  --color-nav-bg: #1e2a38;
+  --color-nav-hover: #7cb3d4;
+  --color-footnote: #90a8b8;
+  --color-copyright: #7a8890;
+  --color-sidebar-bg: #1a2430;
+  --color-breadcrumb-bg: #1e2a38;
+  --color-border: #2c3e50;
+  --color-surface: #1e2a38;
+  --color-text-inverse: #121820;
+  --color-surface-alt: #243342;
+  --color-accent-dark: #a3cce0;
+  --color-overlay: rgba(0,0,0,0.7);
+  --color-muted: #6a7880;
+  --color-focus-ring: rgba(124, 179, 212, 0.25);
+  --color-shadow: rgba(0,0,0,0.4);
+  --color-border-subtle: rgba(255,255,255,0.06);
+  --color-popup-bg: #1e2a38;
+}
+
+/* ================================
+   Sepia Theme (Parchment)
+   ================================ */
+[data-theme="sepia"] {
+  --color-text: #3d2b1f;
+  --color-background: #fdf6e8;
+  --color-accent: #6b4226;
+  --color-jesus: #8b1a1a;
+  --color-link: #7a5230;
+  --color-link-hover: #5a3a1e;
+  --color-nav-bg: #eddcc4;
+  --color-nav-hover: #6b4226;
+  --color-footnote: #7a6050;
+  --color-copyright: #8a7a6a;
+  --color-sidebar-bg: #f7efe0;
+  --color-breadcrumb-bg: #f2e8d6;
+  --color-border: #d9c8a8;
+  --color-surface: #f7efe0;
+  --color-text-inverse: #fff;
+  --color-surface-alt: #eddcc4;
+  --color-accent-dark: #4a2a14;
+  --color-overlay: rgba(0,0,0,0.5);
+  --color-muted: #a09080;
+  --color-focus-ring: rgba(107, 66, 38, 0.15);
+  --color-shadow: rgba(0,0,0,0.12);
+  --color-border-subtle: rgba(0,0,0,0.06);
+  --color-popup-bg: #f7efe0;
+}
+
+/* ================================
+   Olive Theme (Sage)
+   ================================ */
+[data-theme="olive"] {
+  --color-text: #2c2e28;
+  --color-background: #fafaf6;
+  --color-accent: #4a5a3a;
+  --color-jesus: #8b1a1a;
+  --color-link: #4a7a50;
+  --color-link-hover: #2d5a32;
+  --color-nav-bg: #dde4d4;
+  --color-nav-hover: #4a5a3a;
+  --color-footnote: #5a6050;
+  --color-copyright: #7a8070;
+  --color-sidebar-bg: #f0f2ec;
+  --color-breadcrumb-bg: #e8ece2;
+  --color-border: #c8d0be;
+  --color-surface: #f0f2ec;
+  --color-text-inverse: #fff;
+  --color-surface-alt: #dde4d4;
+  --color-accent-dark: #343f28;
+  --color-overlay: rgba(0,0,0,0.5);
+  --color-muted: #8a9080;
+  --color-focus-ring: rgba(74, 90, 58, 0.15);
+  --color-shadow: rgba(0,0,0,0.12);
+  --color-border-subtle: rgba(0,0,0,0.06);
+  --color-popup-bg: #f0f2ec;
 }
 
 /* Font Face */
@@ -69,7 +169,7 @@ body {
 .sidebar {
   width: var(--sidebar-width);
   background: var(--color-sidebar-bg);
-  border-right: 1px solid #ddd;
+  border-right: 1px solid var(--color-border);
   position: fixed;
   top: 0;
   left: 0;
@@ -87,7 +187,7 @@ body {
 .sidebar-header {
   padding: var(--spacing-md);
   background: var(--color-nav-hover);
-  color: #fff;
+  color: var(--color-text-inverse);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,14 +198,14 @@ body {
 .sidebar-header h2 {
   margin: 0;
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--color-text-inverse);
   text-align: left;
 }
 
 .sidebar-close {
   background: none;
   border: none;
-  color: #fff;
+  color: var(--color-text-inverse);
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.25rem;
@@ -113,12 +213,12 @@ body {
 }
 
 .sidebar-section {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .sidebar-section summary {
   padding: var(--spacing-sm) var(--spacing-md);
-  background: #e9ecef;
+  background: var(--color-surface-alt);
   cursor: pointer;
   font-weight: bold;
   font-size: 0.95rem;
@@ -138,7 +238,7 @@ body {
 }
 
 .sidebar-section[open] summary::after {
-  content: '−';
+  content: '\2212';
 }
 
 .sidebar-section ul {
@@ -153,12 +253,12 @@ body {
   color: var(--color-text);
   text-decoration: none;
   font-size: 0.9rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-border-subtle);
   transition: background 0.2s;
 }
 
 .sidebar-section li a:hover {
-  background: #e3f2fd;
+  background: var(--color-surface-alt);
 }
 
 .sidebar-section li a.active {
@@ -169,7 +269,7 @@ body {
 /* Menu Toggle Button */
 .menu-toggle {
   background: var(--color-nav-hover);
-  color: #fff;
+  color: var(--color-text-inverse);
   border: none;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
@@ -181,7 +281,7 @@ body {
 }
 
 .menu-toggle:hover {
-  background: #1a3a5c;
+  background: var(--color-accent-dark);
 }
 
 /* Sidebar Overlay */
@@ -192,7 +292,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: var(--color-overlay);
   z-index: 999;
 }
 
@@ -233,7 +333,7 @@ body {
 }
 
 .breadcrumb .separator {
-  color: #999;
+  color: var(--color-muted);
   margin: 0 0.25rem;
 }
 
@@ -253,17 +353,18 @@ body {
   padding: 0.4rem 0.6rem;
   font-size: 0.95rem;
   font-family: inherit;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
-  background: #fff;
+  background: var(--color-background);
+  color: var(--color-text);
   cursor: pointer;
   min-width: 120px;
 }
 
 .chapter-nav select:focus {
   outline: none;
-  border-color: var(--color-nav-hover);
-  box-shadow: 0 0 0 2px rgba(32, 72, 128, 0.2);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-focus-ring);
 }
 
 /* Prev/Next Navigation */
@@ -279,17 +380,17 @@ body {
   width: 2.5rem;
   height: 2.5rem;
   background: var(--color-nav-bg);
-  color: #000;
+  color: var(--color-accent);
   text-decoration: none;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid var(--color-border);
   font-size: 1.2rem;
   transition: background 0.2s, color 0.2s;
 }
 
 .prev-next a:hover {
   background: var(--color-nav-hover);
-  color: #fff;
+  color: var(--color-text-inverse);
 }
 
 .prev-next a.disabled {
@@ -442,14 +543,14 @@ h1 {
   position: absolute;
   bottom: 1.5em;
   left: 0;
-  background: #fffde7;
-  border: 1px solid #ccc;
+  background: var(--color-popup-bg);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 0.75rem;
   width: 18rem;
   font-size: 0.85rem;
   line-height: 1.4;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px var(--color-shadow);
   z-index: 100;
   text-indent: 0;
   font-style: normal;
@@ -465,7 +566,7 @@ h1 {
   display: block;
   margin-top: var(--spacing-lg);
   padding-top: var(--spacing-md);
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--color-border);
   font-size: 0.9rem;
   color: var(--color-footnote);
 }
@@ -510,17 +611,17 @@ h1 {
   min-width: 2rem;
   text-align: center;
   background-color: var(--color-nav-bg);
-  color: #000;
+  color: var(--color-accent);
   text-decoration: none;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid var(--color-border);
   transition: background-color 0.2s, color 0.2s;
 }
 
 .tnav a:hover,
 .tnav a:focus {
   background-color: var(--color-nav-hover);
-  color: #fff;
+  color: var(--color-text-inverse);
 }
 
 /* Chapter List Page (Book Home) */
@@ -581,7 +682,7 @@ h1 {
 
 .bookList h3 {
   background: var(--color-nav-hover);
-  color: #fff;
+  color: var(--color-text-inverse);
   padding: var(--spacing-sm) var(--spacing-md);
   margin: var(--spacing-md) 0 0;
   text-align: left;
@@ -592,13 +693,15 @@ h1 {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 2px;
-  background: #ddd;
-  border: 1px solid #ddd;
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .bookList li {
-  background: #fff;
+  background: var(--color-background);
 }
 
 .bookList li a {
@@ -610,7 +713,7 @@ h1 {
 }
 
 .bookList li a:hover {
-  background: #e3f2fd;
+  background: var(--color-surface-alt);
 }
 
 .vnav {
@@ -672,6 +775,36 @@ a {
 
 a:hover {
   color: var(--color-link-hover);
+}
+
+/* ================================
+   Theme Switcher
+   ================================ */
+.theme-switcher {
+  /* Sits in nav-controls */
+}
+
+.theme-switcher select {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-background);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.theme-switcher select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-focus-ring);
+}
+
+.nav-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
 }
 
 /* RTL Support */
@@ -813,6 +946,10 @@ html[dir="rtl"] .q3 {
 
   .bookList ul {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .nav-controls {
+    justify-content: center;
   }
 }
 
